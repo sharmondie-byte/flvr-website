@@ -1,6 +1,11 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+/* Hero Styling */
 .hero-section {
-  height: 50vh;
-  background: #050a14;
+  min-height: 400px;
+  background: linear-gradient(135deg, #001f3f 0%, #0074d9 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,24 +13,50 @@
   color: white;
 }
 
+.main-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
 .cyan-text {
   color: #00e5ff;
 }
 
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* Feature Cards */
 .tech-card {
-  background: #0f172a;
-  border: 1px solid #1e293b;
-  color: white;
+  --background: #ffffff;
+  border-bottom: 6px solid #2ecc40; /* Green accent from your screenshot */
   border-radius: 12px;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
-.contact-form {
-  background: #0f172a;
-  border-radius: 16px;
-  padding: 20px;
+ion-card-title {
+  font-weight: bold;
+  color: #001f3f;
 }
 
-.form-item {
-  --background: transparent;
-  --color: white;
+/* Form Styling */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-item {
+  --background: #f4f5f8;
+  --border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
 }

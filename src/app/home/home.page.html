@@ -1,53 +1,50 @@
-<<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="dark">
-    <ion-title>FLVR SYSTEMS</ion-title>
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>FLVR Technology</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="hero-section">
-    <div class="hero-content">
-      <ion-badge color="primary" mode="ios">INNOVATION HUB</ion-badge>
+    <div class="hero-content ion-padding">
+      <ion-badge color="success" mode="ios">INNOVATION HUB</ion-badge>
       <h1 class="main-title">The Future of <span class="cyan-text">Flavor</span></h1>
-      <p>Integrating AI, IoT, and custom software for real-world impact.</p>
-      <ion-button color="primary" shape="round" fill="outline">Explore Our Projects</ion-button>
+      <p class="hero-subtitle">Smart systems. AI solutions. Intelligent automation for the real world.</p>
+      <ion-button color="success" shape="round" size="large">DISCOVER MORE</ion-button>
     </div>
   </div>
 
   <ion-grid class="ion-padding">
     <ion-row>
-      <ion-col size-md="4" size-xs="12">
+      <ion-col size-lg="4" size-md="4" size-xs="12">
         <ion-card class="tech-card">
           <ion-card-header>
-            <ion-icon name="hardware-chip-outline" color="primary"></ion-icon>
-            <ion-card-title>AI & Data</ion-card-title>
+            <ion-card-title>Software Development</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            Data preprocessing, AI pipelines, and machine learning model integration for intelligent decision making.
+            We design custom software, dashboards, and automation tools that help businesses operate efficiently.
           </ion-card-content>
         </ion-card>
       </ion-col>
 
-      <ion-col size-md="4" size-xs="12">
+      <ion-col size-lg="4" size-md="4" size-xs="12">
         <ion-card class="tech-card">
           <ion-card-header>
-            <ion-icon name="git-network-outline" color="primary"></ion-icon>
-            <ion-card-title>Hardware/IoT</ion-card-title>
+            <ion-card-title>Artificial Intelligence</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            Building connected sensor systems with Arduino and embedded hardware for automation and monitoring.
+            We build intelligent data systems, machine learning pipelines, and analytics tools for smarter decision making.
           </ion-card-content>
         </ion-card>
       </ion-col>
 
-      <ion-col size-md="4" size-xs="12">
+      <ion-col size-lg="4" size-md="4" size-xs="12">
         <ion-card class="tech-card">
           <ion-card-header>
-            <ion-icon name="code-slash-outline" color="primary"></ion-icon>
-            <ion-card-title>Software Systems</ion-card-title>
+            <ion-card-title>Hardware & IoT</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            Developing scalable APIs, custom dashboards, and workflow management systems for internal and client use.
+            We integrate Arduino, sensors, and embedded hardware with modern software platforms.
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -55,38 +52,18 @@
   </ion-grid>
 
   <div class="form-container ion-padding">
-    <div class="form-wrapper">
-      <h2 class="ion-text-center">Contact FLVR</h2>
-      <p class="ion-text-center">Ready to join the learnership? Reach out below.</p>
-      
-      <ion-list lines="none" class="transparent-list">
-        <ion-item class="input-item">
-          <ion-input 
-            label="Name" 
-            labelPlacement="floating" 
-            [(ngModel)]="contactData.name" 
-            placeholder="Your full name">
-          </ion-input>
-        </ion-item>
-
-        <ion-item class="input-item">
-          <ion-input 
-            type="email" 
-            label="Email" 
-            labelPlacement="floating" 
-            [(ngModel)]="contactData.email" 
-            placeholder="email@flvr.tech">
-          </ion-input>
-        </ion-item>
-
-        <ion-button 
-          expand="block" 
-          color="primary" 
-          (click)="handleSubmit()" 
-          class="ion-margin-top submit-btn">
-          Submit Message
-        </ion-button>
-      </ion-list>
-    </div>
+    <h2 class="ion-text-center">Contact Us</h2>
+    <ion-list lines="none" class="transparent-list">
+      <ion-item class="input-item">
+        <ion-input label="Name" labelPlacement="floating" [(ngModel)]="contactData.name" placeholder="Enter your name"></ion-input>
+      </ion-item>
+      <ion-item class="input-item">
+        <ion-input type="email" label="Email" labelPlacement="floating" [(ngModel)]="contactData.email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+      <ion-item class="input-item">
+        <ion-textarea label="Message" labelPlacement="floating" placeholder="How can we help?"></ion-textarea>
+      </ion-item>
+      <ion-button expand="block" color="primary" (click)="handleSubmit()" class="ion-margin-top">SEND MESSAGE</ion-button>
+    </ion-list>
   </div>
 </ion-content>
