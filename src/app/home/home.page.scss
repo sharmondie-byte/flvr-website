@@ -1,0 +1,31 @@
+.hero-section {
+  height: 50vh;
+  background: #050a14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.cyan-text {
+  color: #00e5ff;
+}
+
+.tech-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  color: white;
+  border-radius: 12px;
+}
+
+.contact-form {
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.form-item {
+  --background: transparent;
+  --color: white;
+}
